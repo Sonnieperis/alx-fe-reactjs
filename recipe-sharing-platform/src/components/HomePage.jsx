@@ -19,8 +19,17 @@ export default function HomePage() {
     <main className="min-h-screen bg-gray-50 py-10">
       <div className="max-w-6xl mx-auto px-4">
         <header className="mb-8">
+
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900">Recipe Sharing Platform</h1>
           <p className="text-gray-600 mt-1">Browse community-submitted recipes.</p>
+          <div className="mt-4">
+  <Link
+    to="/new"
+    className="inline-flex items-center rounded-lg bg-blue-600 px-4 py-2 text-white hover:bg-blue-700 transition"
+  >
+    + Add Recipe
+  </Link>
+</div>
         </header>
 
         {error && (
