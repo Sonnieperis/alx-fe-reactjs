@@ -3,36 +3,80 @@
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://via.placeholder.com/600x400"
+    "image": "https://via.placeholder.com/800x500",
+    "ingredients": ["Spaghetti", "Eggs", "Parmesan", "Pancetta/Bacon", "Black pepper", "Salt"],
+    "instructions": [
+      "Cook spaghetti in salted boiling water until al dente.",
+      "Meanwhile, cook pancetta until crisp.",
+      "Whisk eggs with grated parmesan and pepper.",
+      "Drain pasta, toss quickly with pancetta and remove from heat.",
+      "Add egg-cheese mixture, tossing until creamy (off heat).",
+      "Serve immediately with extra parmesan and pepper."
+    ]
   },
   {
     "id": 2,
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken cooked in a creamy tomato-based gravy.",
-    "image": "https://via.placeholder.com/600x400"
+    "image": "https://via.placeholder.com/800x500",
+    "ingredients": ["Chicken", "Yogurt", "Garam masala", "Garlic", "Ginger", "Tomato puree", "Cream", "Oil", "Salt"],
+    "instructions": [
+      "Marinate chicken in yogurt, spices, garlic, and ginger for 30+ minutes.",
+      "Sear or grill chicken until nearly cooked.",
+      "In a pan, sauté spices briefly, add tomato puree; simmer.",
+      "Stir in cream; add chicken and finish cooking.",
+      "Adjust salt and serve with rice or naan."
+    ]
   },
   {
     "id": 3,
     "title": "Veggie Stir Fry",
     "summary": "Crisp vegetables tossed in a savory soy-ginger sauce, served over rice.",
-    "image": "https://via.placeholder.com/600x400"
+    "image": "https://via.placeholder.com/800x500",
+    "ingredients": ["Mixed vegetables", "Soy sauce", "Ginger", "Garlic", "Cornstarch", "Oil", "Rice"],
+    "instructions": [
+      "Whisk soy sauce, grated ginger, minced garlic, and a little water; add cornstarch.",
+      "Stir-fry veggies over high heat in oil until crisp-tender.",
+      "Pour in the sauce; toss until glossy and thickened.",
+      "Serve over cooked rice."
+    ]
   },
   {
     "id": 4,
     "title": "Beef Tacos",
     "summary": "Seasoned beef in warm tortillas with salsa, lettuce, and cheese.",
-    "image": "https://via.placeholder.com/600x400"
+    "image": "https://via.placeholder.com/800x500",
+    "ingredients": ["Ground beef", "Taco seasoning", "Tortillas", "Lettuce", "Cheese", "Salsa"],
+    "instructions": [
+      "Brown beef; drain fat.",
+      "Stir in taco seasoning and a splash of water; simmer briefly.",
+      "Warm tortillas.",
+      "Assemble tacos with beef and toppings."
+    ]
   },
   {
     "id": 5,
     "title": "Avocado Toast",
     "summary": "Toasted sourdough topped with smashed avocado, chili flakes, and lemon.",
-    "image": "https://via.placeholder.com/600x400"
+    "image": "https://via.placeholder.com/800x500",
+    "ingredients": ["Sourdough", "Avocado", "Lemon", "Chili flakes", "Salt", "Pepper", "Olive oil"],
+    "instructions": [
+      "Toast bread.",
+      "Smash avocado with lemon, salt, and pepper.",
+      "Spread on toast; finish with chili flakes and olive oil."
+    ]
   },
   {
     "id": 6,
     "title": "Blueberry Pancakes",
     "summary": "Fluffy pancakes filled with blueberries and a drizzle of maple syrup.",
-    "image": "https://via.placeholder.com/600x400"
+    "image": "https://via.placeholder.com/800x500",
+    "ingredients": ["Flour", "Baking powder", "Sugar", "Milk", "Egg", "Butter", "Blueberries", "Salt"],
+    "instructions": [
+      "Whisk dry ingredients; add milk, egg, and melted butter.",
+      "Fold in blueberries.",
+      "Cook scoops on a hot greased pan until bubbles form; flip and finish.",
+      "Serve with maple syrup."
+    ]
   }
 ]

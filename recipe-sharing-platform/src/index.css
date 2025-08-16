@@ -1,9 +1,7 @@
-/* src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Optional: add a little default body reset so the page looks consistent */
 html, body, #root {
   height: 100%;
 }

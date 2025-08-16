@@ -1,13 +1,18 @@
 import { useEffect, useState } from 'react';
-import recipesData from '../data.json'; // import JSON from src
+import { Link } from 'react-router-dom';
 
 export default function HomePage() {
   const [recipes, setRecipes] = useState([]);
+  const [error, setError] = useState(null);
 
-  // Load data on mount
   useEffect(() => {
-    // Using import keeps the file in /src as requested and still uses state/effect.
-    setRecipes(recipesData);
+    fetch('/data.json')
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
+      .then(setRecipes)
+      .catch((e) => setError(e.message));
   }, []);
 
   return (
@@ -18,7 +23,12 @@ export default function HomePage() {
           <p className="text-gray-600 mt-1">Browse community-submitted recipes.</p>
         </header>
 
-        {/* Responsive grid */}
+        {error && (
+          <div className="mb-6 rounded-lg border border-red-200 bg-red-50 p-4 text-red-700">
+            Failed to load recipes: {error}
+          </div>
+        )}
+
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {recipes.map((r) => (
             <article
@@ -35,14 +45,13 @@ export default function HomePage() {
                 <h2 className="text-lg font-semibold text-gray-900">{r.title}</h2>
                 <p className="mt-2 text-sm md:text-base text-gray-600">{r.summary}</p>
 
-                {/* Placeholder link for now; will wire up with Router in a later task */}
-                <a
-                  href={`/recipe/${r.id}`}
+                <Link
+                  to={`/recipe/${r.id}`}
                   className="inline-flex items-center mt-4 font-medium text-blue-600 hover:text-blue-700 transition"
                   aria-label={`View details for ${r.title}`}
                 >
                   View details <span className="ml-1">→</span>
-                </a>
+                </Link>
               </div>
             </article>
           ))}
